@@ -9,10 +9,9 @@ Group:            Sciences/Mathematics
 License:          LGPL
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-utils R-tcltk 
-Requires:         R-Biobase 
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-tcltk
-BuildRequires:    R-Biobase 
+Requires:         R-methods R-utils R-tcltk R-Biobase
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-methods R-utils R-tcltk R-Biobase
 
 %description
 This packages contains tools to support the construction of tcltk widgets
