@@ -9,9 +9,10 @@ Group:            Sciences/Mathematics
 License:          LGPL
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
-Requires:         R-methods R-utils R-tcltk R-Biobase
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex
-BuildRequires:    R-methods R-utils R-tcltk R-Biobase
+Requires:         R-methods R-utils R-tcltk 
+Requires:         R-Biobase 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-tcltk
+BuildRequires:    R-Biobase 
 
 %description
 This packages contains tools to support the construction of tcltk widgets
@@ -27,8 +28,8 @@ mkdir -p %{buildroot}%{rlibdir}
 test -d %{packname}/src && (cd %{packname}/src; rm -f *.o *.so)
 rm -f %{buildroot}%{rlibdir}/R.css
 
-%check
-%{_bindir}/R CMD check %{packname}
+#%check
+#%{_bindir}/R CMD check %{packname}
 
 %files
 %dir %{rlibdir}/%{packname}
@@ -40,3 +41,11 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/Meta
 %{rlibdir}/%{packname}/R
 %{rlibdir}/%{packname}/help
+
+
+%changelog
+* Thu Feb 16 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.32.0-1
++ Revision: 775491
+- Import R-widgetTools
+- Import R-widgetTools
+
