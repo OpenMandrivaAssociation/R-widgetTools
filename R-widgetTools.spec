@@ -1,14 +1,16 @@
 %global packname  widgetTools
 %global rlibdir  %{_libdir}/R/library
 
+%define debug_package %{nil}
+
 Name:             R-%{packname}
-Version:          1.32.0
+Version:          1.36.0
 Release:          1
 Summary:          Creates an interactive tcltk widget
 Group:            Sciences/Mathematics
 License:          LGPL
 URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
-Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/%{packname}_%{version}.tar.gz
+Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/widgetTools_1.36.0.tar.gz
 Requires:         R-methods R-utils R-tcltk 
 Requires:         R-Biobase 
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex R-methods R-utils R-tcltk
@@ -48,4 +50,5 @@ rm -f %{buildroot}%{rlibdir}/R.css
 + Revision: 775491
 - Import R-widgetTools
 - Import R-widgetTools
+
 
