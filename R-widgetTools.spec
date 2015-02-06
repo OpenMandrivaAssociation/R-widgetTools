@@ -5,7 +5,7 @@
 
 Name:             R-%{packname}
 Version:          1.38.0
-Release:          1
+Release:          2
 Summary:          Creates an interactive tcltk widget
 Group:            Sciences/Mathematics
 License:          LGPL
