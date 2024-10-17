@@ -9,7 +9,7 @@ Release:          2
 Summary:          Creates an interactive tcltk widget
 Group:            Sciences/Mathematics
 License:          LGPL
-URL:              http://bioconductor.org/packages/release/bioc/html/%{packname}.html
+URL:              https://bioconductor.org/packages/release/bioc/html/%{packname}.html
 Source0:          http://bioconductor.org/packages/release/bioc/src/contrib/widgetTools_1.38.0.tar.gz
 Requires:         R-methods R-utils R-tcltk 
 Requires:         R-Biobase 
